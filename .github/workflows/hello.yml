@@ -1,0 +1,20 @@
+
+name: My First Automation
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display greeting
+        run: echo "Hello! GitHub Actions is working."
+
+      - name: Display current directory
+        run: pwd
+
+      - name: Display date
+        run: date
